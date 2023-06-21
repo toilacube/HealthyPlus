@@ -77,8 +77,8 @@ public class NotificationActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_notification);
 
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        String hour[]={"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"};
-        String minute[]={"00","10","20","30","40","50","60"};
+        String hour[]={"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23", "0"};
+        String minute[]={"00","10","20","30","40","50"};
         ArrayList<Boolean> day = new ArrayList<Boolean>();
         for(int i=0; i<7;i++){
             day.add(true);
